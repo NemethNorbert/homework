@@ -1,0 +1,30 @@
+{
+	"name": "homework",
+	"version": "1.0.0",
+	"description": "homework for an interview",
+	"main": "index.js",
+	"scripts": {
+		"build": "npx tsc",
+		"start": "node dist/index.js",
+		"dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Norbert Nemeth",
+	"license": "ISC",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^16.4.7",
+		"express": "^4.21.2",
+		"rxdb": "^15.39.0",
+		"rxjs": "^7.8.1"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.17",
+		"@types/express": "^5.0.0",
+		"@types/node": "^22.10.2",
+		"concurrently": "^9.1.0",
+		"nodemon": "^3.1.7",
+		"typescript": "^5.7.2"
+	}
+}
